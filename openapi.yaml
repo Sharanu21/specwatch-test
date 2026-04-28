@@ -11,7 +11,7 @@ paths:
           in: query
           required: true
           schema:
-            type: integer
+            type: string
         - name: limit
           in: query
           required: true
