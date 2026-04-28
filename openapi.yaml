@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: Test API
-  version: 2.0.3
+  version: 2.0.2
 paths:
   /users:
     get:
@@ -16,7 +16,7 @@ paths:
           in: query
           required: true
           schema:
-            type: integer
+            type: string
       responses:
         '200':
           description: Success
@@ -36,7 +36,7 @@ paths:
                   email:
                     type: string
                   age:
-                    type: string
+                    type: integer
   /orders/{id}:
     delete:
       summary: Delete order
