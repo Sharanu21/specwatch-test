@@ -31,7 +31,7 @@ paths:
                 properties:
                   # 🚨 BREAKING CHANGE: Changed type from string to integer
                   id:
-                    type: integer
+                    type: boolean
                   name:
                     type: string
                   email:
