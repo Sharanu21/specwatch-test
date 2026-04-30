@@ -3,21 +3,9 @@ info:
   title: Test API
   version: 4.1.0
 paths:
-  /users: 
+ /ping: 
     get:
-      summary: Get users
       responses:
         '200':
-          description: Success
-          content:
-            application/json:
-              schema:
-                type: object
-                required:
-                  - id
-                  - secret_key # 🚨 BREAKING: New required field
-                properties:
-                  id:
-                    type: string
-                  secret_key:
-                    type: string
+          description: OK
+                
