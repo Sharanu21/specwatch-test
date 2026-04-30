@@ -1,29 +1,6 @@
 openapi: 3.0.0
 info:
   title: Test API
-  version: 2.0.1
-paths:
-  /Allusers:
-    get:
-      
-          schema:
-            type: string
-      responses:
-        '200':
-          description: Success
-          content:
-            application/json:
-              schema:
-                type: object
-                required:
-                  - id
-                  
-                properties:
-                  
-                  name:
-                    type: string
-                  email:
-                    type: string
-                  age:
-                    type: integer
-  
+  version: 2.0.2
+paths: {}
+                
