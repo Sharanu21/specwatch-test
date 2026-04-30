@@ -3,7 +3,7 @@ info:
   title: Test API
   version: 2.0.1
 paths:
-  /users:
+  /Allusers:
     get:
       summary: Get users
       parameters:
