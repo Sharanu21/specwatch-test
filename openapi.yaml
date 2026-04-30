@@ -1,11 +1,11 @@
 openapi: 3.1.0
 info:
   title: Test API
-  version: 4.0.0 
+  version: 4.1.0
 paths:
-  /breaking-test: 
+  /users: 
     get:
-      summary: This must trigger scan 19
+      summary: Get users
       responses:
         '200':
           description: Success
@@ -14,7 +14,10 @@ paths:
               schema:
                 type: object
                 required:
-                  - status
+                  - id
+                  - secret_key # 🚨 BREAKING: New required field
                 properties:
-                  status:
+                  id:
+                    type: string
+                  secret_key:
                     type: string
