@@ -38,16 +38,6 @@ paths:
                   age:
                     type: integer
   /orders/{id}:
-    delete:
-      summary: Delete order
-      parameters:
-        - name: id
-          in: path
-          required: true
-          schema:
-            type: integer
-      responses:
-        '200':
-          description: Deleted
+   
         '404':
           description: Not found
