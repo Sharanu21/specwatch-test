@@ -1,11 +1,11 @@
-openapi: 3.0.0
+openapi: 3.1.0
 info:
   title: Test API
-  version: 3.0.0
+  version: 4.0.0 
 paths:
-  /users:
+  /breaking-test: 
     get:
-      summary: Get users
+      summary: This must trigger scan 19
       responses:
         '200':
           description: Success
@@ -14,8 +14,7 @@ paths:
               schema:
                 type: object
                 required:
-                  - id
+                  - status
                 properties:
-                 
-                  id:
-                    type: integer
+                  status:
+                    type: string
