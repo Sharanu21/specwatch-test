@@ -5,16 +5,7 @@ info:
 paths:
   /Allusers:
     get:
-      summary: Get users
-      parameters:
-        - name: page
-          in: query
-          required: true
-          schema:
-            type: string
-        - name: limit
-          in: query
-          required: true
+      
           schema:
             type: string
       responses:
