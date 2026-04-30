@@ -1,4 +1,42 @@
-openapi: 
-
+openapi: 3.0.0
+info:
+  title: Test API
+  version: 2.1.0
+paths:
+  /users:
+    get:
+      summary: Get users
+      parameters:
+        - name: page
+          in: query
+          required: true
+          schema:
+            type: string
+        # 🚨 BREAKING CHANGE: New mandatory parameter
+        - name: api_key
+          in: query
+          required: true
+          schema:
+            type: string
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - id
+                  - name
+                properties:
+                  # 🚨 BREAKING CHANGE: Changed type from string to integer
+                  id:
+                    type: integer
+                  name:
+                    type: string
+                  email:
+                    type: string
+                  age:
+                    type: integer
   
  
