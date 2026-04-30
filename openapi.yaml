@@ -16,6 +16,6 @@ paths:
                 required:
                   - id
                 properties:
-                  # 🚨 BREAKING: This was a string in Scan 16/17, now it's a boolean
+                 
                   id:
-                    type: boolean
+                    type: integer
