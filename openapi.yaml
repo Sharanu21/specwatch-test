@@ -1,11 +1,18 @@
-openapi: 3.1.0
+
+openapi: 3.0.0
 info:
   title: Test API
-  version: 4.1.0
+  version: 5.0.0
 paths:
- /ping: 
+  /users:
     get:
+      summary: Get users
       responses:
         '200':
-          description: OK
-                
+          description: Success
+  /orders:
+    get:
+      summary: Get orders
+      responses:
+        '200':
+          description: Success
