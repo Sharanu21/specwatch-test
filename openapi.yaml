@@ -1,6 +1,21 @@
 openapi: 3.0.0
 info:
   title: Test API
-  version: 2.2.0
-paths:{}
-  
+  version: 3.0.0
+paths:
+  /users:
+    get:
+      summary: Get users
+      responses:
+        '200':
+          description: Success
+          content:
+            application/json:
+              schema:
+                type: object
+                required:
+                  - id
+                properties:
+                  # 🚨 BREAKING: This was a string in Scan 16/17, now it's a boolean
+                  id:
+                    type: boolean
