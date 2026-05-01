@@ -3,15 +3,4 @@ info:
   title: Test API
   version: 6.0.0
 paths:
-  /users:
-    get:
-      summary: Get users
-      responses:
-        '200':
-          description: Success
-  /orders:
-    get:
-      summary: Get orders
-      responses:
-        '200':
-          description: Success
+ 
